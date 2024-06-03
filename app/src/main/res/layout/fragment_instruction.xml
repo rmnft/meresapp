@@ -1,0 +1,130 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/you4"
+    tools:context=".InstructionsActivity">
+
+    <TextView
+        android:id="@+id/tvInstructionsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/horizon"
+        android:text="Instruções"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvInstructionsText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/nourd_light"
+        android:gravity="center"
+        android:text="Nessa PRIMEIRA etapa você verá 5 grupos com 4 características. Selecione a característica que mais se identifica com você."
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvInstructionsTitle"
+        app:layout_constraintWidth_default="spread" />
+
+    <TextView
+        android:id="@+id/tvTopic1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="1. Clique em INICIAR para começar o questionário."
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:fontFamily="@font/nourd_light"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tvInstructionsText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+
+    <TextView
+        android:id="@+id/tvTopic2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="2. Cada grupo contém 4 características. Selecione a que mais se identifica com você."
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:fontFamily="@font/nourd_light"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tvTopic1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+
+    <TextView
+        android:id="@+id/tvTopic3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="3. Você pode navegar entre os grupos clicando em AVANÇAR."
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:fontFamily="@font/nourd_light"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tvTopic2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+
+    <TextView
+        android:id="@+id/tvTopic4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="4. Ao final do questionário, você verá o seu perfil comportamental."
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:fontFamily="@font/nourd_light"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tvTopic3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+
+    <ImageButton
+        android:id="@+id/btnStart"
+        android:layout_width="372dp"
+        android:layout_height="299dp"
+        android:background="@null"
+        android:padding="-50dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/teste_disc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.844" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clique na MAGEM abaixo para inciar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.561" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
